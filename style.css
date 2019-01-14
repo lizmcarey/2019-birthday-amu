@@ -46,7 +46,7 @@ div{
   cursor: pointer
 }
   
- .btn:hover {
+ .btn:hover span{
     background: white;
     border-color: var(--oc-red-5);
   }
