@@ -1,0 +1,54 @@
+@import 'https://cdn.rawgit.com/yeun/open-color/master/open-color.css';
+@import url('https://rsms.me/inter/inter-ui.css');
+
+.heading {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 3em;
+}
+
+.subheading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+:root{
+  --easing: cubic-bezier(.5,0,.5,1);
+}
+
+*{ box-sizing: border-box; }
+html{ font-size: 70%; }
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Inter UI', sans-serif;
+  font-size: 1.6rem;
+}
+
+
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  margin: 0 2rem;
+  padding: 2rem 1.5rem;
+  border-radius: 4px;
+  font-size: 4rem;
+  line-height: 2rem;
+  background: var(--oc-gray-2);
+  border: 2px solid var(--oc-gray-2);
+  transition: all 250ms var(--easing);
+  cursor: pointer;
+  
+  &:hover{
+    background: white;
+    border-color: var(--oc-red-5);
+  }
+}
