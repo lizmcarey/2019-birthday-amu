@@ -43,10 +43,10 @@ div{
   background: var(--oc-gray-2);
   border: 2px solid var(--oc-gray-2);
   transition: all 250ms var(--easing);
-  cursor: pointer;
+  cursor: pointer
+}
   
-  &:hover{
+ .btn:hover {
     background: white;
     border-color: var(--oc-red-5);
   }
-}
