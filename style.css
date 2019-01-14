@@ -1,23 +1,12 @@
 @import 'https://cdn.rawgit.com/yeun/open-color/master/open-color.css';
 @import url('https://rsms.me/inter/inter-ui.css');
-
-.heading {
-  font-family: "Playfair Display", sans-serif;
-  font-size: 5em;
-}
-
-.subheading {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.5em;
-  line-height: 1.5;
-}
-
 :root{
   --easing: cubic-bezier(.5,0,.5,1);
 }
 
 *{ box-sizing: border-box; }
-html{ font-size: 70%; }
+
+html{ font-size: 62.5%; }
 
 body{
   display: flex;
@@ -27,6 +16,17 @@ body{
   height: 100vh;
 }
 
+h1{
+  font-family: "Playfair Display", sans-serif;
+  font-size: 5em;
+  margin-bottom: 4rem;
+}
+
+h2{
+  font-family: "Playfair Display", sans-serif;
+  font-size: 3em;
+  margin-bottom: 5rem;
+}
 
 div{
   display: flex;

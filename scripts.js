@@ -11,16 +11,15 @@ let confetti_colors = [
 ];
 let confettis_conf = [
 
-  // 2
   {
-    angle: 270,
-    spread: 90,
-    startVelocity: 30,
-    elementCount: 30,
-    decay: 0.73,
+    angle: 90,
+    spread: 180,
+    startVelocity: 40,
+    elementCount: 50,
+    decay: 0.75,
     colors: confetti_colors
   }
-
+ 
 ];
 
 let buttons = Array.from(document.querySelectorAll('[data-fun]'));
