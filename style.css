@@ -15,7 +15,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   vertical-align: middle;
 }
 
@@ -48,18 +48,13 @@ div{
   border: 2px solid var(--oc-gray-2);
   transition: all 250ms var(--easing);
   cursor: pointer;
+} 
 
-  &:hover{
+.btn:hover {
     background: white;
     border-color: var(--oc-red-5);
   }
-  
-}
-
-
-p {
-    font-size: 30px;
-}
+ 
 
 a {
     font-family: "Playfair Display", sans-serif;
@@ -84,5 +79,35 @@ a.Squiggle:hover {
 
 
 a.TheOutline {
-  font-family: Source Sans Pro;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.effect-rainbow {
+  color: #ff487a;
+  transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  text-decoration: none;
+}
+
+.effect-rainbow:hover {
+  -webkit-animation: zomg 0.5s infinite;
+  animation: zomg 0.5s infinite;
+}
+
+@-webkit-keyframes zomg {
+  0%, 100% { color: #7ccdea; }
+  16%      { color: #0074d9; }
+  32%      { color: #2ecc40; }
+  48%      { color: #ffdc00; }
+  64%      { color: #b10dc9; }
+  80%      { color: #ff4136; }
+}
+
+@keyframes zomg {
+  0%, 100% { color: #7ccdea; }
+  16%      { color: #0074d9; }
+  32%      { color: #2ecc40; }
+  48%      { color: #ffdc00; }
+  64%      { color: #b10dc9; }
+  80%      { color: #ff4136; }
 }
