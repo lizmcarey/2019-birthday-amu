@@ -1,0 +1,113 @@
+@import 'https://cdn.rawgit.com/yeun/open-color/master/open-color.css';
+@import url('https://rsms.me/inter/inter-ui.css');
+:root{
+  --easing: cubic-bezier(.5,0,.5,1);
+}
+
+*{ box-sizing: border-box; }
+
+html{ 
+  font-size: 10px; 
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  vertical-align: middle;
+}
+
+h1{
+  font-family: "Playfair Display", sans-serif;
+  font-size: 50px;
+  margin-bottom: 4rem;
+}
+
+h2{
+  font-family: "Playfair Display", sans-serif;
+  font-size: 20px;
+  margin-bottom: 5rem;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.btn { 
+  margin: 0 2rem;
+  padding: 2rem 1.5rem;
+  border-radius: 4px;
+  font-size: 4rem;
+  line-height: 2rem;
+  background: var(--oc-gray-2);
+  border: 2px solid var(--oc-gray-2);
+  transition: all 250ms var(--easing);
+  cursor: pointer;
+} 
+
+.btn:hover {
+    background: white;
+    border-color: var(--oc-red-5);
+  }
+ 
+
+a {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 50px;
+    margin-bottom: 4rem;
+    color: black;
+    text-decoration: none;
+    border-bottom: 4px solid;
+    border-bottom-color: purple;
+    font-family: "Playfair Display", sans-serif;
+}
+
+a.Squiggle:hover {
+      border-bottom-color: transparent;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23f00' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 1.1em;
+    background-size: auto 8px;
+    background-repeat:repeat-x;
+    padding-bottom:3px;
+    text-decoration: none;
+}
+
+
+a.TheOutline {
+  font-family: "Playfair Display", sans-serif;
+}
+
+.effect-rainbow {
+  color: #ff487a;
+  transition: color .3s ease-in-out;
+	-moz-transition: color .3s ease-in-out;
+  text-decoration: none;
+}
+
+.effect-rainbow:hover {
+  -webkit-animation: zomg 0.5s infinite;
+  animation: zomg 0.5s infinite;
+}
+
+@-webkit-keyframes zomg {
+  0%, 100% { color: #7ccdea; }
+  16%      { color: #0074d9; }
+  32%      { color: #2ecc40; }
+  48%      { color: #ffdc00; }
+  64%      { color: #b10dc9; }
+  80%      { color: #ff4136; }
+}
+
+@keyframes zomg {
+  0%, 100% { color: #7ccdea; }
+  16%      { color: #0074d9; }
+  32%      { color: #2ecc40; }
+  48%      { color: #ffdc00; }
+  64%      { color: #b10dc9; }
+  80%      { color: #ff4136; }
+}
